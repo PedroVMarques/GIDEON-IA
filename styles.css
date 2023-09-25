@@ -1,0 +1,99 @@
+*{
+    margin: 0;
+    padding: 0;
+    border: 0;
+    outline: 0;
+    box-sizing: border box;
+    }
+
+    body {
+        font-family: Arial, sans-serif;
+        margin: 0;
+        padding: 0;
+        background: url(img/macos-big-sur-purple-beach-jheyzfxy27x1hifz.jpg) no-repeat;
+        height: 100vh;
+        backdrop-filter: blur(5px);
+    }
+
+    .content{
+        display: flex;
+        align-items: center;
+       justify-content: center;
+    }
+    
+    .chat-container {
+        max-width: 400px;
+        margin: 20px auto;
+        background-color: #fff;
+        box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+        border-radius: 8px;
+        overflow: hidden;
+        height: 100%;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between; /* Adicione esta linha */
+    }
+    
+    .chat-box {
+        flex-grow: 1;
+        display: flex;
+        padding: 10px;
+        align-items: center; /* Altere de align-items: flex-start para align-items: center */
+        justify-content: center; /* Adicione esta linha para centralizar horizontalmente */
+        background-color: #201b2c; 
+    }
+        
+    .chat-avatar img {
+        width: 50px;
+        height: 50px;
+        border-radius: 50%;
+    }
+    
+    .chat-content {
+        margin-left: 10px;
+    }
+    
+    .chat-bubble {
+        background-color: #201b2c;
+        color: #77ffc0;
+        padding: 10px;
+        border-radius: 10px;
+    }
+    
+    .user-input {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        padding: 10px;
+        background-color: #f5f5f5;
+    }
+    
+    .user-input{
+        position: fixed; /* Define o posicionamento como fixo */
+        left: 0; /* Posiciona o user-input no lado esquerdo */
+        bottom: 0; /* Posiciona o user-input na parte inferior da janela */
+        width: 98.5%; /* Garante que ele ocupe toda a largura da janela */
+        background-color: #201b2c;
+        padding: 10px;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+    }
+    
+    .user-input button {
+        background-color: #00ff88;
+        color: #2b134b;
+        border: none;
+        border-radius: 5px;
+        padding: 8px 16px;
+        cursor: pointer;
+    }
+    
+    .user-input input{
+        background-color: #201b2c;
+        color: #00ff88;
+    }
+
+
+
+    
